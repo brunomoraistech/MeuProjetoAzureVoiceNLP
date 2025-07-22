@@ -1,21 +1,31 @@
 # MeuProjetoAzureVoiceNLP
-MeuProjetoAzureVoice
-Análise de Sentimentos com Language Studio no Azure AI
-Análise de Sentimentos com Language Studio no Azure AI. Praticar e aprofundar o uso das ferramentas Azure Speech Studio e Language Studio, focando na análise de fala e linguagem natural.
 
-Sentiment and opinion mining é uma solução da plataforma Language Studio, da Azure, que permite detectar sentimentos positivos, negativos e neutros a partir de sentenças.
+Avaliação de Sentimentos com o Azure AI Language Studio
+Este projeto visa aprimorar o domínio das plataformas Azure Speech Studio e Language Studio, com foco na análise de linguagem natural e fala, especialmente para a detecção de sentimentos.
 
-Static Badge Static Badge Static Badge Static Badge
+A funcionalidade "Sentiment and opinion mining", parte integrante do Azure Language Studio, permite identificar emoções positivas, negativas e neutras presentes em frases.
 
-Criar um recurso Azure Language Service
-Para usar o Language Studio, é preciso que você possua um recurso para a plataforma associado a sua conta Azure. siga os seguintes passos:
+Configurando um Serviço de Linguagem no Azure
+Para utilizar o Language Studio, é necessário vincular um recurso de serviço de linguagem à sua conta Azure. Siga estes passos:
 
-Acessar https://portal.azure.com
-Criar um novo recurso Language Service através da opção Create Resource.
-Esperar o deploy do recurso terminar.
-Com o recurso Language Service criado, é preciso conecta-lo ao Language Studio. Para isso, basta seguir os seguintes passos:
--Acessar o Language Studio.
--Na página inicial, acessar os recursos criados através do botão "Select a resouce". 5.Selecionando e testando o serviço no Language Studio Ao retornar a página inicial após concluídos os passos anteriores, é possível ver a lista de serviços disponíveis para teste na plataforma. Nesse experimento foi usado o serviço "Analyze sentiment and mine opinions", na aba "Classify text". 6.Resultados Ao acessar o serviço é possível carregar o texto a ser analisado, selecionar sua linguagem e também ativar a opção de opinion mining.
+Acesse o portal Azure em https://portal.azure.com.
 
-Conclusão e Insights
-Ferramentas de análise de sentimentos e opiniões podem ser muito úteis na automação de análises de feedbacks para serviços. Apesar desse recurso funcionar muito bem para textos que claramente visam expressar sentimentos, como é o caso de comentários e avaliações de produtos, a ferramenta não parece se sair tão bem em textos onde essa expressão não é tão clara. Acredito que esse resultado se deve ao fato de que a ferramenta analisa apenas uma sentença por vez e não parece levar em consideração todo o contexto. Penso que uma tecnologia capaz de estabelecer conexões entre sentenças e obter um entendimento geral sobre o contexto de todo o texto possivelmente seria mais bem sucedida nessa análise.
+Crie um novo recurso de "Language Service" através da opção "Criar Recurso".
+
+Aguarde a conclusão da implantação do recurso.
+
+Após a criação do recurso "Language Service", é preciso conectá-lo ao Language Studio. Para isso, basta seguir estes passos: 
+
+Visite o Language Studio em https://language.cognitive.azure.com/home.
+
+Na tela inicial, utilize o botão "Selecionar um recurso" para acessar os recursos que você criou.
+
+Teste e Seleção do Serviço no Language Studio
+Ao retornar à página principal, após completar os passos anteriores, você verá uma lista de serviços disponíveis para experimentação. Neste teste, optamos pelo serviço "Analisar sentimento e minerar opiniões", localizado na seção "Classificar texto".
+
+Resultados Obtidos
+Ao acessar o serviço, é possível carregar o texto a ser examinado, definir o idioma e ativar a opção de mineração de opinião.
+
+# Conclusões e Percepções
+
+Ferramentas para análise de sentimentos e opiniões podem ser extremamente valiosas para automatizar a avaliação de retornos de clientes sobre serviços. Embora essa funcionalidade se mostre bastante eficaz com textos que expressam sentimentos de forma clara, como comentários e reviews de produtos, a ferramenta não parece ter o mesmo desempenho em textos onde a expressão emocional não é tão evidente. Acredito que isso ocorra porque a ferramenta avalia apenas uma frase por vez, sem considerar o contexto mais amplo. Uma tecnologia capaz de estabelecer conexões entre as sentenças e obter uma compreensão geral de todo o texto, em minha opinião, teria um sucesso maior nessa análise.
